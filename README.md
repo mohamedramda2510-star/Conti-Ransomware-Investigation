@@ -101,7 +101,7 @@ index=* EventCode=1 Image="*\\cmd.exe"
 
 Sysmon Event ID 11 – File Creation
 
-index=* EventCode=11 TargetFilename="*readme.txt*"
+index=* EventCode=11
 | stats count by TargetFilename
 | sort -count
 
@@ -109,8 +109,7 @@ index=* EventCode=11 TargetFilename="*readme.txt*"
 
 Sysmon Event ID 1 – Process Creation
 
-index=* EventCode=1 (Image="*\\net.exe" OR Image="*\\net1.exe")
-| table _time Image CommandLine
+net.exe
 
 3.4 Process Injection Investigation
 
@@ -128,10 +127,11 @@ index=* sourcetype=IIS* cs_method=POST cs_uri_stem="*.aspx"
 
 3.6 Web Shell Command-Line Investigation
 
+i3gfPctK1c2x.aspx
+
 Sysmon Event ID 1 – Process Creation
 
-index=* EventCode=1 CommandLine="*i3gfPctK1c2x.aspx*"
-| table _time Image CommandLine
+
 
 ---
 
