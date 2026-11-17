@@ -19,6 +19,10 @@ Q1. Location of the Ransomware
 
 "C:\Users\Administrator\Documents\cmd.exe"
 
+
+<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/08656e50-c703-4579-88a7-e65e5fa625e5" />
+
+
 Q2. Sysmon Event ID for File Creation
 
 "11"
@@ -27,9 +31,15 @@ Q3. Ransomware MD5 Hash
 
 "290c7dfb01e50cea9e19da81a781af2c"
 
+<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/6425b1f7-8cd6-4d3c-9ba7-a300e8a1ae92" />
+
+
 Q4. File Saved in Multiple Folder Locations
 
 "readme.txt"
+
+<img width="1920" height="1080" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/d58fee34-4c82-4019-845d-20fd928e808e" />
+
 
 Q5. Command Used to Create a New User
 
@@ -37,21 +47,36 @@ net user /add securityninja [REDACTED]
 
 New account identified: "securityninja".
 
+<img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/6d43c49a-584e-4896-b5a3-a8a95f8e2485" />
+
+
 Q6. Process Migration Target
 
 C:\Windows\System32\wbem\unsecapp.exe
+
+<img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/4c83773d-1dd9-41bd-8a7b-57a49b83ae53" />
+
 
 Q7. Target Process for Retrieving System Hashes
 
 C:\Windows\System32\lsass.exe
 
+<img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/18472e4b-357c-4ccd-a033-d29636ad9cf7" />
+
+
 Q8. Deployed Web Shell
 
 i3gfPctK1c2x.aspx
 
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/bfae5396-8609-4b8f-99b9-580228facadb" />
+
+
 Q9. Web Shell Execution Command
 
 attrib.exe -r
+
+<img width="1920" height="1080" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/ba7361ab-3203-45fe-b2ad-74dbfff58256" />
+
 
 The command targeted the Exchange Server OWA authentication directory containing the deployed ASPX web shell.
 
